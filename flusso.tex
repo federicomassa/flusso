@@ -41,6 +41,9 @@ L'esperimento è stato condotto con lo scopo di misurare il flusso di raggi cosm
 
 \section{Introduzione}
 \justify
+
+CERCA "LARGHEZZE" IN TUTTA LA RELAZIONE
+
 L'esperimento consiste nella misurazione del flusso di raggi cosmici mediante un apparato di rivelazione a scintillatore plastico posizionato ad un'altitudine di pochi metri sopra il livello del mare. Gli eventi rivelati saranno quindi <(in grandissima maggioranza)> dovuti alla componente secondaria dei raggi cosmici, derivante dall'interazione della componente primaria con gli atomi o le molecole atmosferiche e dall'eventuale decadimento in volo dei prodotti.
 esperimenti in quota mostrano come i primari sono composti al 2\% da elettroni e positroni e al 98\% da nuclei atomici, dei quali l'87\% sono protoni, il 12\% nuclei di Elio-4 e il restante 1\% nuclei di elementi pesanti [quote longair page 493].
 Le abbondanze relative delle componenti secondarie sono funzioni dell'altitudine a causa dei processi di interazione con l'atmosfera, di perdita di energia e dell'eventuale instabilità delle particelle. 
@@ -51,7 +54,7 @@ I muoni prevalgono nelle misure di flusso rispetto agli elettroni a causa della 
 
 L'energia media dei muoni a terra è di circa 4 GeV \cite{PDF_PDG}. Come conseguenza, l'esperimento è ottimizzato alla rivelazione di muoni in regime di ionizzazione minima.
 
-\section{Apparato sperimentale}
+\section{Apparato sperimentale} \label{sec:apparato}
 \justify
 La strumentazione utilizzata (REF. FIGURA) consiste in un primo
 sistema di tre scintillatori organici approssimativamente
@@ -97,8 +100,14 @@ Mediante l'aggiunta di lunghezze variabili di cavo permettono di ritardare i seg
 \end{itemize}
 Mediante l'aggiunta di cavo permettono di ritardare segnali fino a ?? ns.
 
+MISURE GEOMETRICHE
+
 \section{Operazioni preliminari}
 \subsection{Determinazione dei punti di lavoro}
+Il discriminatore è dotato di un \textit{test point} che restituisce un valore proporzionale alla tensione di soglia. Si sono inviati all'input di un oscilloscopio sia il segnale analogico ricevuto dal PMT che il segnale digitale in uscita dal discriminatore. Per determinare il fattore di proporzionalità si è quindi misurato il segnale analogico di minima ampiezza associato a un segnale digitale. 
+\\
+\'E stato anche verificato che gli scintillatori fossero adeguatamente schermati dalla luce ambientale e si è provveduto nei casi in cui non lo fossero.
+\\
 Prima di tutto si è proceduto a determinare le condizioni ottimali di lavoro degli scintillatori. Per fare ciò, sono state eseguite delle misure di conteggi in funzione della tensione di alimentazione. L'ampiezza del segnale analogico in uscita fluttua con valor medio crescente con la tensione di alimentazione. Per questo motivo, a tensione di soglia fissata, il numero di segnali in uscita dal discriminatore aumenta al crescere della tensione di alimentazione, almeno fino a che, anche tenendo conto delle fluttuazioni casuali, l'ampiezza dei segnali non è consistentemente superiore alla soglia. La presenza del rumore (la cui ampiezza ugualmente aumenta con l'aumentare della tensione) fa sì che la curva non saturi su un determinato valore, ma continui ad avere un andamento crescente.
 \'E tuttavia possibile che la curva presenti una struttura a \textit{plateau} qualora il valor medio degli eventi di segnale disti dal valor medio degli eventi di rumore una quantità apprezzabile rispetto alle fluttuazioni di entrambi. \newpage
 
@@ -114,9 +123,9 @@ Prima di tutto si è proceduto a determinare le condizioni ottimali di lavoro de
 \includegraphics{"plateau_altri"}
 \end{figure}
 
-Ciascuna delle misure è ottenuta in un tempo di 50 s impostando una soglia pari a $30 mV$ per gli scintillatori da 2 a 7 e circa $55 mV$ per gli scintillatori da 8 a 10. Le soglie prescelte sono le minime possibili per i rispettivi piani. Questa scelta è giustificata a posteriori osservando in relazione a tale soglie un numero trascurabile di coincidenze a due piani desincronizzati. [rivedere espressione] Pertanto in tali condizioni di lavoro, misure effettuate quantomeno in regime di coincidenze a due presentano il massimo rapporto segnale/rumore. [RIVEDERE, SPECIALMENTE IN QUANTO NON ABBIAMO TROVATO PLATEAU PER GLI ESTERNI. QUESTO DISCORSO SAREBBE MOLTO PIÙ FORTE SE AVESSIMO LE COINCIDENZE A DUE IN FUNZIONE DELL'ALIMENTAZIONE]
+Ciascuna delle misure è ottenuta in un tempo di 50 s impostando una soglia pari a $30 mV$ per gli scintillatori da 2 a 7 e circa $55 mV$ per gli scintillatori da 8 a 10. La durata dei segnali digitali sono state invece misurate con un oscilloscopio e impostate a 40 ns. Le soglie prescelte sono le minime possibili per i rispettivi piani. Questa scelta è giustificata a posteriori osservando in relazione a tale soglie un numero trascurabile di coincidenze a due piani desincronizzati. [rivedere espressione] Pertanto in tali condizioni di lavoro, misure effettuate quantomeno in regime di coincidenze a due presentano il massimo rapporto segnale/rumore. [RIVEDERE, SPECIALMENTE IN QUANTO NON ABBIAMO TROVATO PLATEAU PER GLI ESTERNI. QUESTO DISCORSO SAREBBE MOLTO PIÙ FORTE SE AVESSIMO LE COINCIDENZE A DUE IN FUNZIONE DELL'ALIMENTAZIONE]
 
-\subsection{Messa in tempo degli scintillatori}
+\subsection{Messa in tempo degli scintillatori} \label{subsec:sync}
 
 Per far si che il passaggio attraverso i vari piani di una particella possa produrre un segnale in uscita dal modulo di coincidenza è necessario mettere in tempo i vari piani. Per fare ciò, utilizzando opportune scatole di ritardo e cavi, si è tracciata la curva delle coincidenze tra coppie di piani in funzione del ritardo relativo tra essi.
 
@@ -134,9 +143,9 @@ P(0, \mu t) = e^{−\mu t} = 10\% → t = 115 s
 $
 
 \subsection{Stima del tempo morto del sistema}
+Dopo la rivelazione di una particella il sistema non è immediatamente pronto a rivelare un secondo evento, ma esiste un intervallo di tempo, chiamato \textit{tempo morto} prima del quale il sistema non produce un output in risposta al passaggio di una seconda particella. 
 ???
-
-\subsection{Determinazione dell'efficienza degli scintillatori}
+\subsection{Determinazione dell'efficienza degli scintillatori} \label{subsec:efficienza}
 Data la configurazione geometrica dell'apparato sperimentale è stato possibile misurare in modo semplice l'efficienza dei piani 3, 4, 5 (vedi !!REF.FIG!!) valutando caso per caso i rapporti: \\
 $
 \varepsilon_3 = C_{236}/C_{26}, \hspace{0.4 cm} \varepsilon_4 = C_{246}/C_{26}, \hspace{0.4 cm} \varepsilon_5 = C_{256}/C_{26}
@@ -199,15 +208,146 @@ Media & \hphantom & \hphantom & \textbf{0.959} \\
 Standard Dev. & \hphantom & \hphantom & \textbf{0.003} \\ 
 \hline 
 \end{tabular} 
+\vspace{0.8 cm}
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\textbf{Piano} & $\mathbf{C_{ijk}}$ & $\mathbf{C_{ik}}$ & \textbf{Efficienza} \\
+\hline 
+9 & 2797 & 2920 & 0.958 \\ 
+\hline 
+\hphantom & 2740 & 2863 & 0.957 \\ 
+\hline 
+\hphantom & 2862 & 2974 & 0.962 \\ 
+\hline 
+Media & \hphantom & \hphantom & \textbf{0.959} \\ 
+\hline 
+Standard Dev. & \hphantom & \hphantom & \textbf{0.003} \\ 
+\hline 
+\end{tabular} 
+\vspace{0.8 cm}
+
+Come si può vedere dalla (!!FIG!!) non si è riusciti a identificare dei \textit{plateau} nel caso del secondo sistema di scintillatori (piani 8, 9). Si è dunque deciso di procedere a scegliere la tensione a cui operare in modo tale da trovare un compromesso tra efficienza alta del rivelatore centrale (che risulta in tempi di misura ridotti) e pendenza della curva dei conteggi in funzione della tensione bassa (che risulta in una misura più accurata). 
+
+\begin{center}
+\begin{figure}
+\includegraphics[width=\textwidth]{"eff_tens"}
+\label{fig:eff_tens}
+\end{figure}
+\end{center}
+
+Dai risultati in Fig.\ref{fig:eff_tens} si sono scelte le seguenti condizioni di lavoro:
+
+%OCCHIO!! Ho messo delle condizioni di lavoro che mi sembrano più accettabili
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Piano} & \textbf{Tensione (V)} & \textbf{Soglia (mV)} \\ 
+\hline 
+8 & 1800 & 55 \\ 
+\hline 
+9 & 1800 & 55 \\ 
+\hline 
+10 & 1780 & 55 \\ 
+\hline 
+\end{tabular} 
+
+\end{center}
 
 \section{Metodo di misura}
-La misura del flusso si ottiene a partire dal numero di 
-\subsection{Accettanza del sistema}
+La misura del flusso si ottiene a partire dal numero di coincidenze tra i tre piani consecutivi precedentemente identificati con i numeri 3,4 e 5. La scelta è ricaduta su tali piani non essendo possibile misurare con metodi immediati l'efficienza dei piani agli estremi del sistema.\\
+Da precedenti esperimenti \cite{PDG_cosquadro} è noto che la distribuzione angolare del flusso di muoni alla superficie è data approssimativamente da:\\
+
+\begin{center}
+$\dfrac{d\Phi}{d\Omega}=k\cdot cos^2 \theta$\\
+\end{center}
+
+Dove $k$ rappresenta il flusso verticale, misurato in $cm^{-2} \cdot s^{-1} \cdot sr^{-1}$.\\
+
+
+
+\subsection{Accettanza del sistema} \label{subsec:MC}
+Prescindendo dall'analisi delle efficienze dei piani, il sistema misura solamente gli eventi relativi ad una porzione dell'angolo solido, che è determinata dalla sua configurazione geometrica. La determinazione di tale angolo solido per vie algebriche non è banale e si è pertanto fatto ricorso ad una simulazione Montecarlo che modellizzasse nello spazio il sistema di scintillatori e ne misurasse l'accettanza  come rapporto tra gli eventi accettati e la totalità di eventi generati. La simulazione è strutturata come segue:
+
+\begin{itemize}
+\item{Generazione di una coppia di valori $(\theta,\phi)$ secondo la distribuzione angolare del flusso.}\\
+\item{Generazione di una coppia $(x_{4},y_{4})$ sul piano centrale secondo una distribuzione uniforme}\\
+\item{Calcolo della posizione di attraversamento della particella attraverso i piani esterni 3 e 5 noti i suoi $(\theta,\phi)$.}
+\item{Verifica dell'appartenenza di $(x_{3},y_{3})$ e $(x_{5},y_{5})$ ai rispettivi piani.}
+\item{Accettazione o rifiuto dell'evento per ciascun piano in base alle rispettive efficienze.}
+\item{Calcolo dell'accettanza come rapporto tra eventi accettati e generati.}
+\end{itemize}
+
+Una volta determinato il valore dell'accettanza, il flusso è stato ricavato dalla relazione: \\
+$
+\Phi = \frac{C_{3,4,5}}{a A \Delta t}
+$
+
+dove $a$ indica l'accettanza, $A$ l'area del singolo scintillatore, $\Delta t$ il tempo di misura in cui sono state misurate $C_{3,4,5}$ coincidenze.
+
 \subsubsection{Effetto dell'efficienza non uniforme dei piani}
+Il metodo appena descritto non tiene conto dell'eventuale distribuzione spaziale non uniforme delle efficienze lungo i piani. Per valutare se questo effetto sia apprezzabile, occorre prima di tutto determinare la suddetta distribuzione in modo sperimentale. Avendo a disposizione uno scintillatore di dimensioni ridotte rispetto ai precedenti (identificato con il numero 7), è stato possibile ricorrere ad un metodo analogo a quello precedente per la determinazione dell'efficienza. Posizionando infatti lo scintillatore 7 immediatamente al di sopra del sistema (sopra lo scintillatore 6) si può misurare il rapporto tra le coincidenze $C_{2,i,7}/C_{2,7}$. Come si può osservare in figura (!!REF!!), questo misura l'efficienza di una particolare zona dello scintillatore i. La distribuzione ottenuta può essere implementata nella simulazione Montecarlo semplicemente modificando il penultimo step e richiedendo un controllo sulle efficienze dipendente dai particolari valori $(x_i,y_i)$. EFFETTO!!
+
 \subsection{Correzioni}
 \subsubsection{Tempo morto}
+L'esistenza di un tempo morto determina la diminuzione del rate misurato rispetto a quello reale. Questo si riflette in una sottostima del flusso la cui entità si può stimare grazie alla relazione \cite{correzione_tempomorto}: \\
+$
+R_V = \dfrac{R_M}{1-R_M \Delta t}
+$
+
+dove $R_V$ è il rate corretto, $R_M$ quello misurato e $\Delta t$ il tempo morto. La formula non tiene conto delle efficienze dei piani, ma è comunque utile per effettuare una stima ed eventualmente verificare che si tratti di una correzione trascurabile al flusso.
+
 \subsubsection{Particelle multiple}
+Si è proceduto a stimare la correzione dovuta alla possibilità che alcuni eventi rivelati siano in realtà composti da due o più particelle. 
+------
+
+
 \subsection{Sciami estesi}
+Si è proceduto infine a valutare quanti degli eventi rivelati dal sistema appartengono a sciami estesi utilizzando un secondo sistema di scintillatori posto ad una certa distanza dal primo. In primo luogo si è effettuata la messa in tempo del secondo sistema di scintillatori rispetto al primo, con un metodo analogo a quello riportato in sez. \ref{subsec:sync}. Data la configurazione geometrica dell'apparato due particelle attraversano i due sistemi in tempi diversi pur arrivando a terra contemporaneamente, a causa della differente altezza a cui si trovano. Trattandosi di distanze dell'ordine del metro, i segnali provenienti dai due sistemi avranno un ritardo relativo intrinseco di circa $3 ns$. Pur essendo teoricamente possibile riconoscere gli eventi di sciame da questo ritardo intrinseco, le durate dei segnali minime imposte dal modulo di coincidenza e l'incertezza dovuta all'operazione di messa in tempo rendono complicato sfruttare questa differenza. \\
+Essendo il secondo sistema composto da tre piani, è stato possibile determinare accuratamente l'efficienza del solo piano centrale (numero 9). Questo però, unitamente al fatto che per il medesimo motivo sono stati utilizzati i piani 3 e 5 del primo sistema, ha fatto in modo che una singola particella potesse attraversare tutti i piani utilizzati, a causa della loro disposizione geometrica. Un evento di questo tipo produrrebbe segnali nei due sistemi con un ritardo dello stesso ordine di grandezza del ritardo di un legittimo evento di sciame, rappresentando in questo modo un fondo difficilmente eliminabile ma facilmente stimabile grazie a una seconda simulazione Montecarlo, analoga a quella descritta in sez. \ref{subsec:MC}. \\
+In conclusione, sono state misurate le coincidenze tra i piani 3, 5, 9 ed è stata misurata l'accettanza ...
+
+\section{Risultati sperimentali}
+\subsection{Accettanza del sistema}
+La simulazione è stata condotta utilizzando come parametri quelli misurati in precedenza:
+\begin{itemize}
+\item{Lunghezza, largezza dei singoli piani di scintillatore e relativa distanza (
+vedi sez. \ref{sec:apparato}})
+\item{Efficienze dei piani 3, 4 e 5 (vedi sez. \ref{subsec:efficienza})}
+\end{itemize}
+
+L'incertezza sull'accettanza si può determinare ripetendo gli step elencati in sez. \ref{subsec:MC}, ogni volta utilizzando come parametri quelli estratti dalle loro rispettive distribuzioni. Si è ritenuto opportuno ipotizzare che le misure geometriche fossero distribuite uniformemente attorno al valore misurato con un'incertezza di $1 cm$ ( essendo misure influenzate da difficoltà contingenti) e che le efficienze avessero una distribuzione approssimativamente gaussiana con media e deviazione standard uguali a quelle misurate (sez. \ref{subsec:efficienza}). Inoltre, dato che per determinare l'accettanza si utilizzano le informazioni geometriche sul sistema, e che nella determinazione del flusso compare il prodotto tra area del rivelatore e accettanza (sez. \ref{subsec:MC}), si è deciso di simulare quest'ultimo oltre che la sola accettanza.
+
+I valori così ottenuti risultano \\
+$
+\mathbf{a = } 
+$
+\\
+$
+\mathbf{ a \cdot A =  }
+$
+
+
+\subsection{Misura del flusso}
+Nel tempo di misura sono state misurate \\
+\begin{equation}
+C_{3,4,5} = 518009
+\nonumber
+\end{equation}
+coincidenze a tre in un tempo di misura \\
+\begin{equation}
+\Delta t = 54838 s
+\nonumber
+\end{equation}
+
+Il flusso risulta quindi essere uguale a \\
+\begin{equation}
+\mathbf{\Phi = \frac{C_{3,4,5}}{\Delta t \cdot a \cdot A} = } 
+\nonumber
+\end{equation}
+
+\subsection{Correzioni alla misura del flusso}
+
 
 \input{bibflusso.bib}
 

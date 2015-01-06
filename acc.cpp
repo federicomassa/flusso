@@ -40,7 +40,9 @@ void acc(){
   double theta, W1,W2,W3, phi,x1,x2,x3,y1,y2,y3;
   int j = 0;
   
- TH1F* hacc = new TH1F("dis_acc","Distribuzione accettanza; aA (cm^2); # esperimenti", 100, 400, 600);
+ TH1F* hacc = new TH1F("a","Distribuzione accettanza; a; # esperimenti", 100, 0.2, 0.3);
+ TH1F* haccA = new TH1F("aA","Distribuzione accettanza; aA (cm^2); # esperimenti", 100, 400, 600);
+
  TFile rfile("accettanza.root","RECREATE");
 
   for (int a = 1; a <= nexp; a++) { 
@@ -79,9 +81,11 @@ void acc(){
     cout << "Generati: " << imax << endl;
     cout << "Accettati: " << j << endl;
     cout << "Accettanza: " << double(j)/double(imax) << endl;
-    hacc->Fill(double(j)/double(imax)*rxmax*rymax); //le moltiplico anche per l'area perché nel flusso accettanza e area compaiono insieme
+haccA->Fill(double(j)/double(imax));   
+haccA->Fill(double(j)/double(imax)*rxmax*rymax); //le moltiplico anche per l'area perché nel flusso accettanza e area compaiono insieme
     j = 0;
   }
   cout << "Accettanza media: " << hacc->GetMean()*xmax*ymax << endl;
   hacc->Write();
+  haccA->Write();
 }

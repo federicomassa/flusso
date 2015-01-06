@@ -1,6 +1,9 @@
 \documentclass[11pt]{article}
 \usepackage{makeidx}
 \usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
 \renewcommand\refname{Referenze}
 \usepackage[utf8x]{inputenc}
 \usepackage{titlesec}
@@ -286,7 +289,9 @@ $
 dove $a$ indica l'accettanza, $A$ l'area del singolo scintillatore, $\Delta t$ il tempo di misura in cui sono state misurate $C_{3,4,5}$ coincidenze.
 
 \subsubsection{Effetto dell'efficienza non uniforme dei piani}
-Il metodo appena descritto non tiene conto dell'eventuale distribuzione spaziale non uniforme delle efficienze lungo i piani. Per valutare se questo effetto sia apprezzabile, occorre prima di tutto determinare la suddetta distribuzione in modo sperimentale. Avendo a disposizione uno scintillatore di dimensioni ridotte rispetto ai precedenti (identificato con il numero 7), è stato possibile ricorrere ad un metodo analogo a quello precedente per la determinazione dell'efficienza. Posizionando infatti lo scintillatore 7 immediatamente al di sopra del sistema (sopra lo scintillatore 6) si può misurare il rapporto tra le coincidenze $C_{2,i,7}/C_{2,7}$. Come si può osservare in figura (!!REF!!), questo misura l'efficienza di una particolare zona dello scintillatore i. La distribuzione ottenuta può essere implementata nella simulazione Montecarlo semplicemente modificando il penultimo step e richiedendo un controllo sulle efficienze dipendente dai particolari valori $(x_i,y_i)$. EFFETTO!!
+Il metodo appena descritto non tiene conto dell'eventuale distribuzione spaziale non uniforme delle efficienze lungo i piani. Per valutare se questo effetto sia apprezzabile, occorre prima di tutto determinare la suddetta distribuzione in modo sperimentale. Avendo a disposizione uno scintillatore di dimensioni ridotte rispetto ai precedenti (identificato con il numero 7), è stato possibile ricorrere ad un metodo analogo a quello precedente per la determinazione dell'efficienza. Posizionando infatti lo scintillatore 7 immediatamente al di sopra del sistema (sopra lo scintillatore 6) si può misurare il rapporto tra le coincidenze $C_{2,i,7}/C_{2,7}$. Come si può osservare in figura (!!REF!!), questo misura l'efficienza di una particolare zona dello scintillatore i. La distribuzione ottenuta può essere implementata nella simulazione Montecarlo semplicemente modificando il penultimo step e richiedendo un controllo sulle efficienze dipendente dai particolari valori $(x_i,y_i)$. Il risultato così ottenuto va confrontato con quello precedente.\\
+Come si può però vedere in Fig. !!!REF!!!, l'area di volta in volta presa in considerazione sui piani 3, 4 e 5 è maggiore della superficie del piano 7, ed è tanto maggiore quanto più è grande la loro distanza da quest'ultimo. \'E pertanto possibile che regioni di studio contigue sul medesimo piano presentino delle zone di sovrapposizione. A causa di questo effetto non è banale relazionare le efficienze delle singole zone con l'efficienza globale del piano tramite una semplice operazione di media.
+
 
 \subsection{Correzioni}
 \subsubsection{Tempo morto}
@@ -296,6 +301,9 @@ R_V = \dfrac{R_M}{1-R_M \Delta t}
 $
 
 dove $R_V$ è il rate corretto, $R_M$ quello misurato e $\Delta t$ il tempo morto. La formula non tiene conto delle efficienze dei piani, ma è comunque utile per effettuare una stima ed eventualmente verificare che si tratti di una correzione trascurabile al flusso.
+
+\subsubsection{Assorbimento}
+Essendo il rivelatore posto all'interno di un edificio, è il linea di principio possibile che le particelle perdano abbastanza energia da impedirne la rivelazione. Per misurare quest'effetto è stata posta una lastra di piombo tra i piani 1 e 2 e si sono effettuate una serie di misure con e senza di esso. Si è poi effettuato un test sull'ipotesi che non ci sia assorbimento.
 
 \subsubsection{Particelle multiple}
 Si è proceduto a stimare la correzione dovuta alla possibilità che alcuni eventi rivelati siano in realtà composti da due o più particelle. 
@@ -327,6 +335,12 @@ $
 \mathbf{ a \cdot A =  469 \pm 17 cm^2}
 $
 
+\subsubsection{Effetto dell'efficienza non uniforme dei piani}
+
+I risultati sono mostrati in (!!!REF FIGURA!!!): \\
+
+
+
 
 \subsection{Misura del flusso}
 Nel tempo di misura sono state misurate: \\
@@ -342,7 +356,7 @@ coincidenze a tre in un tempo di misura: \\
 
 Il flusso risulta quindi essere uguale a: \\
 \begin{equation}
-\mathbf{\Phi = \frac{C_{3,4,5}}{\Delta t \cdot a \cdot A} = 201 \pm 7 \ m^2 s^{-1}} 
+\mathbf{\Phi = \frac{C_{3,4,5}}{\Delta t \cdot a \cdot A} = 201 \pm 7 \ m^{-2} s^{-1}} 
 \nonumber
 \end{equation}
 
@@ -354,8 +368,47 @@ Normalmente il risultato degli esperimenti di misura di flusso è riportato in t
 \begin{equation}
 \Phi = \frac{1}{A}\frac{dN}{dt}=\int_{\theta=0}^{\theta=\frac{\pi}{2}}  \! k\cdot cos^2{\theta} \, \mathrm{d}\Omega = \frac{2}{3}\pi\cdot k
 \end{equation}
-Un precedente esperimento (\cite{Flusso_int}) riporta 
 
+Espresso in questo modo, il risultato è dunque:
+
+\begin{equation}
+\Phi_v = 96 \pm 3 \ m^{-2}s^{-1} sr^{-1}
+\end{equation}
+
+%Un precedente esperimento\cite{Flusso_int} riporta i seguenti risultati per il flusso verticale integrato su tutti i valori del momento al di sopra di un certo valore:
+
+%\begin{center}
+%\begin{figure}
+%\includegraphics[width=\textwidth]{"flusso_int"} 
+%\end{figure}
+%\end{center}
+
+%dal quale si evince che 
+%\begin{equation}
+%\Phi_{v, Rastin}(E \gtrapprox 300 MeV) = 90 m^{-2} s^{-1}
+%\end{equation}
+
+%!!!!! che è compatibile con il nostro entro due sigma !!!
+
+Esperimenti\cite{Flusso_NPL} riportano i risultati del flusso di muoni a o al di sopra di un certo valore di energia: \\
+\vspace{0.8 cm}
+\begin{tabular}{|c|c|}
+\hline 
+E/GeV & $I_{muons}/m^{-2} s^{-1} sr^{-1}$ \\ 
+\hline 
+0.1 & 99 \\ 
+\hline 
+0.2 & 97 \\ 
+\hline 
+0.5 & 86 \\ 
+\hline 
+1 & 69 \\ 
+\hline 
+\end{tabular} 
+\vspace{0.8 cm}
+
+che è compatibile con quello trovato se si considera una soglia di energia compresa tra $200 \ MeV$ e $500 \ MeV$. \\
+La principale fonte di errore è data dall'incertezza con la quale è nota la configurazione geometrica. Al fine di migliorare questa misura sarebbe dunque necessario conoscere 
 
 \input{bibflusso.bib}
 

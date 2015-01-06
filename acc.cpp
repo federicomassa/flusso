@@ -81,7 +81,7 @@ void acc(){
     cout << "Generati: " << imax << endl;
     cout << "Accettati: " << j << endl;
     cout << "Accettanza: " << double(j)/double(imax) << endl;
-haccA->Fill(double(j)/double(imax));   
+hacc->Fill(double(j)/double(imax));   
 haccA->Fill(double(j)/double(imax)*rxmax*rymax); //le moltiplico anche per l'area perché nel flusso accettanza e area compaiono insieme
     j = 0;
   }

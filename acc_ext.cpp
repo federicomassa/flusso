@@ -37,7 +37,7 @@ void acc_ext(){
   //efficienze
   //  float eps1 [3][3] = {{0.612,0.662,0.762},{0.425,0.470,0.612},{0.574,0.618,0.722}};
 	double  rxmax, rymax, rD12, rD23, rDh, reps1, reps2, reps3; 
-	float eps1 = 0.844; //efficienza 9
+  float eps1 = 0.844; //efficienza 9
   float s_eps1 = 0.003;
   float eps2 = 0.807; //efficienza 5
   float s_eps2 = 0.003;
@@ -45,7 +45,7 @@ void acc_ext(){
   float s_eps3 = 0.003;
   double theta, W1,W2,W3, phi,x1,x2,x3,y1,y2,y3;
   int j = 0;
- TH1F* hacc = new TH1F("aA (cm^2)","Distribuzione accettanza; aA (cm^2); # esperimenti", 100, 10, 30);
+ TH1F* hacc = new TH1F("aA","Distribuzione accettanza; aA; # esperimenti", 100, 10, 30);
  TFile rfile("accettanza_ext.root","RECREATE");
 
   for (int a = 1; a <= nexp; a++) { 

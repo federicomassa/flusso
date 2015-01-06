@@ -14,11 +14,11 @@ double s_xmax = 1; //risoluzione
 double ymax = 48.5; //cm
 double s_ymax = 1; //risoluzione
 double D12 = 10.2;// cm
-double s_D12 = 0.5; //risoluzione
+double s_D12 = 1; //risoluzione
 double D23 = 10.2; //cm
-double s_D23 = 0.5; //risoluzione
+double s_D23 = 1; //risoluzione
 int imax = 100000;
-int nexp = 100; //numero pseudoesperimenti
+int nexp = 20000; //numero pseudoesperimenti
 //double stheta;
 //double sphi;
 
@@ -31,16 +31,16 @@ void acc(){
   //efficienze
   //  float eps1 [3][3] = {{0.612,0.662,0.762},{0.425,0.470,0.612},{0.574,0.618,0.722}};
 	double  rxmax, rymax, rD12, rD23, reps1, reps2, reps3; 
-  float eps1 = 0.951;
+  float eps1 = 0.85;
   float s_eps1 = 0.003;
-  float eps2 = 0.953;
+  float eps2 = 0.65;
   float s_eps2 = 0.003;
-  float eps3 = 0.959;
+  float eps3 = 0.81;
   float s_eps3 = 0.003;
   double theta, W1,W2,W3, phi,x1,x2,x3,y1,y2,y3;
   int j = 0;
   
- TH1F* hacc = new TH1F("dis_acc","Distribuzione accettanza", 100, 850, 950);
+ TH1F* hacc = new TH1F("dis_acc","Distribuzione accettanza; aA (cm^2); # esperimenti", 100, 400, 600);
  TFile rfile("accettanza.root","RECREATE");
 
   for (int a = 1; a <= nexp; a++) { 
@@ -49,9 +49,9 @@ void acc(){
       rymax = ymax + rndgen.Uniform(2*s_ymax)-s_ymax;
       rD12 = D12 + rndgen.Uniform(2*s_D12)-s_D12;
       rD23 = D23 + rndgen.Uniform(2*s_D23)-s_D23;
-      reps1 = rndgen.Gaus(eps1,1/3*s_eps1); //inserire distribuzione corretta
-      reps2 = rndgen.Gaus(eps2,1/3*s_eps2);
-      reps3 = rndgen.Gaus(eps3,1/3*s_eps3);
+      reps1 = rndgen.Gaus(eps1,s_eps1); //inserire distribuzione corretta
+      reps2 = rndgen.Gaus(eps2,s_eps2);
+      reps3 = rndgen.Gaus(eps3,s_eps3);
     for (int i = 1; i <= imax;) {
             
       theta = rndgen.Uniform(2*atan(1.)); 
@@ -82,5 +82,6 @@ void acc(){
     hacc->Fill(double(j)/double(imax)*rxmax*rymax); //le moltiplico anche per l'area perché nel flusso accettanza e area compaiono insieme
     j = 0;
   }
+  cout << "Accettanza media: " << hacc->GetMean()*xmax*ymax << endl;
   hacc->Write();
 }

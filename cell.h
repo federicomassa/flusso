@@ -1,0 +1,5 @@
+int cell(double x,double L) {
+  double x2 = x + L/2;
+  int n = int(x2/L*3);
+  return n;
+    }

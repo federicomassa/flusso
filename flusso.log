@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.29)  6 JAN 2015 20:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.11.29)  29 JAN 2015 15:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -416,81 +416,50 @@ LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 40.
  [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 77.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 77.
- [3] [4]
-Overfull \hbox (4.28412pt too wide) in paragraph at lines 112--113
-[][]\OT1/cmr/m/n/14.4 E stato an-che ver-i-fi-cato che gli scin-til-la-tori fos
--sero adeguata-mente scher- 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 89--94
+
  []
 
-
-Overfull \hbox (11.31656pt too wide) in paragraph at lines 114--115
-\OT1/cmr/m/it/14.4 plateau \OT1/cmr/m/n/14.4 qualora il valor medio degli event
-i di seg-nale disti dal valor medio 
- []
-
-
-Overfull \hbox (9.26068pt too wide) in paragraph at lines 114--115
-\OT1/cmr/m/n/14.4 degli eventi di ru-more una quan-tit^^Ra ap-prez-z-abile risp
-etto alle flut-tuazioni 
- []
-
-[5] <"plateau_1".png, id=29, 393.47pt x 676.5275pt>
+[4] [5] <"plateau_1".png, id=29, 393.47pt x 676.5275pt>
 File: "plateau_1".png Graphic file (type png)
  <use "plateau_1".png>
-Package pdftex.def Info: "plateau_1".png used on input line 118.
+Package pdftex.def Info: "plateau_1".png used on input line 117.
 (pdftex.def)             Requested size: 393.46902pt x 676.52583pt.
 
 
-LaTeX Warning: Float too large for page by 120.04927pt on input line 119.
+LaTeX Warning: Float too large for page by 120.04927pt on input line 118.
 
 <"plateau_2".png, id=30, 393.47pt x 676.5275pt>
 File: "plateau_2".png Graphic file (type png)
  <use "plateau_2".png>
-Package pdftex.def Info: "plateau_2".png used on input line 122.
+Package pdftex.def Info: "plateau_2".png used on input line 121.
 (pdftex.def)             Requested size: 393.46902pt x 676.52583pt.
 
 
-LaTeX Warning: Float too large for page by 120.04927pt on input line 123.
+LaTeX Warning: Float too large for page by 120.04927pt on input line 122.
 
 <"plateau_altri".png, id=31, 393.47pt x 676.5275pt>
 File: "plateau_altri".png Graphic file (type png)
  <use "plateau_altri".png>
-Package pdftex.def Info: "plateau_altri".png used on input line 126.
+Package pdftex.def Info: "plateau_altri".png used on input line 125.
 (pdftex.def)             Requested size: 393.46902pt x 676.52583pt.
 
 
-LaTeX Warning: Float too large for page by 120.04927pt on input line 127.
-
-
-Overfull \hbox (4.48242pt too wide) in paragraph at lines 129--130
-\OT1/cmr/m/n/14.4 cata a pos-te-ri-ori os-ser-vando in re-lazione a tale soglie
- un nu-mero trascur- 
- []
-
-
-Overfull \hbox (29.07883pt too wide) in paragraph at lines 129--130
-\OT1/cmr/m/n/14.4 regime di co-in-ci-denze a due pre-sen-tano il mas-simo rap-p
-orto seg-nale/rumore. 
- []
-
-
-Overfull \hbox (34.90305pt too wide) in paragraph at lines 129--130
-\OT1/cmr/m/n/14.4 [RIVEDERE, SPE-CIAL-MENTE IN QUANTO NON AB-BI-AMO TROVATO 
- []
+LaTeX Warning: Float too large for page by 120.04927pt on input line 126.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-Overfull \hbox (11.14063pt too wide) in paragraph at lines 140--142
-\OT1/cmr/m/n/14.4 un val-ore di as-pet-tazione nullo si ^^Re es-teso il tempo d
-i misura all'intervallo 
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+
  []
 
 [6] [7 <./plateau_1.png>] [8 <./plateau_2.png>] [9 <./plateau_altri.png>]
@@ -499,109 +468,89 @@ File: uni-34.def 2013/05/13 UCS: Unicode data U+2200..U+22FF
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/ucs/data/uni-33.def
 File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
-) [10]
-Overfull \hbox (1.5841pt too wide) in paragraph at lines 233--234
-\OT1/cmr/m/n/14.4 dunque de-ciso di pro-cedere a scegliere la ten-sione a cui o
-p-er-are in modo 
+)
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
  []
 
-<"eff_tens".png, id=48, 698.61pt x 475.7775pt>
+[10] [11] <"eff_tens".png, id=51, 698.61pt x 475.7775pt>
 File: "eff_tens".png Graphic file (type png)
  <use "eff_tens".png>
-Package pdftex.def Info: "eff_tens".png used on input line 237.
+Package pdftex.def Info: "eff_tens".png used on input line 236.
 (pdftex.def)             Requested size: 443.57848pt x 302.09357pt.
- [11]
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--262
+
+ []
+
 [12 <./eff_tens.png>]
-Overfull \hbox (10.70729pt too wide) in paragraph at lines 273--274
-\OT1/cmr/m/n/14.4 gli eventi ac-cettati e la to-talit^^Ra di eventi generati. L
-a sim-u-lazione ^^Re strut- 
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
  []
 
 [13]
-Overfull \hbox (6.2428pt too wide) in paragraph at lines 278--279
-[]\OT1/cmr/m/n/14.4 Calcolo della po-sizione di at-traver-sa-mento della par-ti
--cella at-traverso 
+Overfull \hbox (1.53798pt too wide) in paragraph at lines 279--280
+[]\OT1/cmr/m/n/14.4 Accettazione o ri-fi-uto dell'evento per cias-cun pi-ano in
+ base alle rispet-
+ []
+
+[14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
+
  []
 
 
-Overfull \hbox (9.92441pt too wide) in paragraph at lines 281--282
-[]\OT1/cmr/m/n/14.4 Calcolo dell'accettanza come rap-porto tra eventi ac-cettat
-i e generati.  
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 349--351
+
  []
 
 
-Overfull \hbox (0.67746pt too wide) in paragraph at lines 289--290
-[]\OT1/cmr/m/n/14.4 dove $\OML/cmm/m/it/14.4 a$ \OT1/cmr/m/n/14.4 in-dica l'acc
-ettanza, $\OML/cmm/m/it/14.4 A$ \OT1/cmr/m/n/14.4 l'area del sin-golo scin-til-
-la-tore, $^^A\OML/cmm/m/it/14.4 t$ \OT1/cmr/m/n/14.4 il tempo 
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
+
  []
 
-
-Overfull \hbox (11.96068pt too wide) in paragraph at lines 292--292
-\OT1/cmr/m/n/14.4 spaziale non uni-forme delle ef-fi-cienze lungo i pi-ani. Per
- va-l-utare se questo 
- []
-
-[14]
-Overfull \hbox (27.35548pt too wide) in paragraph at lines 293--294
-\OT1/cmr/m/n/14.4 7, ed ^^Re tanto mag-giore quanto pi^^Ru ^^Re grande la loro 
-dis-tanza da quest'ultimo. 
- []
-
-
-Overfull \hbox (22.02887pt too wide) in paragraph at lines 313--313
-\OT1/cmr/m/n/14.4 dis-tanze dell'ordine del metro, i seg-nali prove-ni-enti dai
- due sis-temi avranno 
- []
-
-
-Overfull \hbox (18.7389pt too wide) in paragraph at lines 313--313
-\OT1/cmr/m/n/14.4 du-rate dei seg-nali min-ime im-poste dal mod-ulo di co-in-ci
--denza e l'incertezza 
- []
-
-[15] [16]
-Overfull \hbox (16.38391pt too wide) in paragraph at lines 326--327
-\OT1/cmr/m/n/14.4 a quelle mis-urate (sez. 3.4[]). In-oltre, dato che per de-te
-r-minare l'accettanza 
- []
-
-[17] [18]
-Overfull \hbox (7.4541pt too wide) in paragraph at lines 410--411
-\OT1/cmr/m/n/14.4 la con-fig-u-razione ge-o-met-rica. Al fine di miglio-rare qu
-esta misura sarebbe 
- []
-
-(./bibflusso.bib) [19] (./flusso.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[18] (./bibflusso.bib [19]) [20] (./flusso.aux) ) 
 Here is how much of TeX's memory you used:
  5799 strings out of 493109
  79201 string characters out of 6135009
- 145145 words of memory out of 5000000
+ 145148 words of memory out of 5000000
  9140 multiletter control sequences out of 15000+600000
  13665 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,9n,30p,1095b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on flusso.pdf (19 pages, 217951 bytes).
+</usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti12.pfb>
+Output written on flusso.pdf (20 pages, 220239 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
